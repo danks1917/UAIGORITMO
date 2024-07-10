@@ -1,0 +1,351 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+
+/* CONFIGURAÇÕES CORPO DO SITE */
+body {
+    font-family: Helvetica;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+/* CONFIGURAÇÕES NAVEGADOR DO SITE */
+
+nav { 
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 10px; /* SEPARA A LINHA DO TITULO SEJA BEM VINDO */
+    background-color: #0d799d;
+    text-align: center;
+}
+
+/* CONFIGURAÇÕES LISTA DO NAVEGADOR DO SITE */
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/* CONFIGURAÇÕES LISTA DO NAVEGADOR DO SITE */
+ul li {
+    margin-right: 30px;
+}
+
+/* CONFIGURAÇÕES LISTA DO NAVEGADOR DO SITE (cor do texto branca) */
+ul li a {
+    color: #fff;
+}
+
+/* CONFIGURAÇÃO DOS TÍTULOS H1 */
+h1 {
+    font-size: 32px;
+}
+
+/* CONFIGURAÇÃO DOS TÍTULOS H2 */
+h2 {
+    font-size: 26px;
+    font-family: Georgia;
+}
+
+/* CONFIGURAÇÃO IMAGEM CENTRAL DO SITE */
+img {
+    border: 3px solid #20c2f8;
+    max-width: 900px; max-height: 800px;
+    visibility: hidden;
+}
+
+/* CONFIGURAÇÃO RODAPÉ DO SITE */
+/*footer{
+    padding: 60px;
+    border-top: 1px solid #666;
+    margin-top: 20px;
+    background-color: #0d799d;
+    text-align: center;
+    color: #fff;
+}*/
+
+/* SEPARAÇAO DO UAIGORITMO DO "SEJA BEM-VINDO" PARA ALTERAR A COR DELE */
+.bloco {
+    display: inline-block;
+    padding: 15 px;
+    font-size: 32px;
+}
+
+#uaigoritmo-titulo {
+    color: #20c2f8;
+    font-family: Georgia;
+}
+#bem-vindo {
+    padding: 0;
+}
+
+/* RETIRA O SUBLINHADO DOS ELEMENTOS DA LISTA DO NAV */
+.elemento-fixo {
+    text-decoration: none;
+}
+
+/* CONFIGURAÇÃO DAS IMAGENS DOS PRODUTOS */
+.recursos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.recursos {
+    width: 31%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+}
+
+/* CONFIGURAÇÃO GERAL DAS IMAGENS DE PRODUTOS */
+.product-image {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #20c2f8;
+}
+
+/* IMAGEM 1 */
+#img-1 {
+    background-image: url('../img/uaigoritmo.jpg');
+}
+
+/* IMAGEM 2 */
+#img-2 {
+    background-image: url('../img/rastreamento.jpg');
+}
+
+/* IMAGEM 3 */
+#img-3 {
+    background-image: url('../img/cliente.jpg');
+}
+
+/* BOTÕES "SAIBA MAIS" */
+.btn {
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #6cc4ff;
+    border: 3px solid #033357;
+    color: #012147;
+    display: block;
+    width: 100%;
+    padding: 12px 7px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+/* EFEITO BOTÕES "SAIBA MAIS" */
+.btn:hover {
+    background-color: #012147;
+    color: #fff;
+}
+
+/* EFEITO SCROLL */
+.product-image{
+    visibility: hidden;
+}
+
+.btn{
+    visibility: hidden;
+}
+
+.tituloEfeito1, .tituloEfeito2, .tituloEfeito3 {
+    visibility: hidden;
+}
+
+.subTituloEfeito {
+    visibility: hidden;
+}
+
+
+
+
+/* aq começa as sessoes */
+section.module p{
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  
+  section.module:last-child{
+    margin-bottom: 0;
+  }
+  
+  section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+  section.module.content{
+   padding: 40px 0;
+   background: #012147; 
+  }
+  
+  section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  }
+  
+  
+  section.module.parallax-1{
+    background-image: url('../img/industria.jpg');
+  }
+  
+  section.module.parallax-2{
+    background-image: url('../img/industria2.jpg');
+  }
+  
+  section.module.parallax-3{
+    background-image: url('../img/industria4.jpg');
+  }
+  
+  section.module.parallax h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+  }
+  
+  @media all and (max-width: 820px) {
+    section.module h2 {
+      font-size: 32px;
+    }
+    .module h2, p{
+      padding: 0 8px;
+    }
+  
+    .container{
+      margin:0;
+      padding:0;
+    }
+  
+    section.module.parallax h1 {
+      font-size: 36px;
+    } }
+ /* aq finaliza as sessoes */
+
+
+
+/* aq começa o footer/rodapé inspirado */
+    footer{
+        background: #343434;
+        padding-top: 30px;
+    }
+    .container2{
+        justify-content: center;
+        width: 1140px;
+        margin: auto;
+        display: flex;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        margin-right: 25px;
+    }
+    .footer-content p{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .listFooter{
+        padding: 0;
+    }
+    .listFooter li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .listFooter li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #20c2f8;
+        transition-duration: .5s;
+    }
+    .listFooter li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color:#20c2f8;
+    }
+    .social-icons i:hover{
+        color:#20c2f8;
+    }
+    .bottom-bar{
+        background: #20c2f8;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color: #0d799d;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
